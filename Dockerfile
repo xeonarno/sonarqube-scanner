@@ -14,6 +14,7 @@ ENV PATH="/sonar-scanner-${SONAR_SCANNER_VERSION}-linux/bin:${PATH}"
 
 # Install typescript globally as it is needed for SonarTS
 RUN npm install -g typescript
+ENV NODE_PATH "/usr/lib/node_modules/"
 
 # Entrypoint
 ENTRYPOINT ["sonar-scanner"]
