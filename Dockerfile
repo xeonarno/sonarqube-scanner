@@ -1,4 +1,4 @@
-FROM ubuntu:18.04
+FROM node:8.10
 
 # We fix sonar version
 ENV SONAR_SCANNER_VERSION 3.2.0.1227
